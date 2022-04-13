@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago</title>
+</head>
+
+<body>
+    <!--Contenido-->
+    <section>
+        <!--Tarjeta-->
+        <div>
+            <h2>Orden de Pago</h2>
+            <form>
+                <label for="tipo">Tipo de Tarjeta</label><br>
+                <input type="radio" name="tipoTarjeta" id="c" value="c">
+                <label for="credito">Credito</label>
+                <input type="radio" name="tipoTarjeta" id="d" value="d">
+                <label for="debito">Debito</label><br><br>
+                <label for="numTarjeta">Numero de Tarjeta</label>
+                <input type="text" id="numTarjeta">
+                &nbsp;
+                <label for="cvv">CVV</label>
+                <input type="password" id="cvv" name="cvv">
+                &nbsp; &nbsp;
+                <label for="fechaCad">Fecha de Caducidad</label>
+                <input type="date" name="fechaCad" id="fechaCad">
+            </form>
+        </div>
+        <!--Datos-->
+        <div>
+            <h2>Datos de la Tarjeta</h2>
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre">
+                &nbsp;
+                <label for="apellidop">Apellido Paterno</label>
+                <input type="text" id="apellidop" name="apellidop">
+                &nbsp;
+                <label for="apellidom">Apellido Materno</label>
+                <input type="text" id="apellidom" name="apellidom">
+                <br><br>
+                <label for="direccion">Direcci&oacute;n</label>
+                <textarea name="direccion" id="direccion" cols="30" rows="10"></textarea>
+                &nbsp; &nbsp;
+                <label for="cp">C.P.</label>
+                <input type="text" name="cp" id="cep">
+            </form>
+        </div>
+        <br>
+        <a href="Home.html">Cancelar Pago</a>
+        <a href="#">Enviar Pago</a>
+    </section>
+</body>
+</html>
