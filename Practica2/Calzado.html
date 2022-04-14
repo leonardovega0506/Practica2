@@ -9,8 +9,8 @@
 </head>
 
 <body>
-    <!--Cabecero-->
-    <header>
+       <!--Cabecero-->
+       <header>
         <!--Icono Home-->
         <div>
             <a href="Home.html"><img src="images/casa.png" alt="Casa" width="40" height="40"></a>
@@ -20,7 +20,7 @@
         <!--Botones del header-->
         <div>
             <menu type="toolbar">
-                <button>Home</button>
+                <button><a href="Home.html">Home</a></button>
                 <button>Configuraci&oacute;n</button>
                 <button>Ayuda</button>
             </menu>
@@ -28,19 +28,26 @@
         <!--Iconos de Header-->
         <div>
             <a href="#"><img src="images/user.png" alt="Usuario" width="40" height="40"></a>
-            <a href="#"><img src="images/carrito.png" alt="Carrito" width="40" height="40"></a>
+            <a href="Carrito.html"><img src="images/carrito.png" alt="Carrito" width="40" height="40"></a>
         </div>
     </header>
     <!--Barra de Navegacion-->
     <nav>
         <div>
-            <select name="categoria" id="categoria">
-                <option value="Ropa" href="Login.html">Ropa</option>
-            </select>
+            <form name="categorias" action="#" method="post">
+                <select name="categoria" onchange='document.location.href=document.categorias.categoria.options[document.categorias.categoria.selectedIndex].value;'>
+                <option value="" disabled selected="selected">Categoria</option>
+                <option value="Abarrotes.html">Abarrotes</option>
+                <option value="Calzado.html">Calzado</option>
+                <option value="Electronica.html">Electronica</option>
+                <option value="Mascotas">Mascotas</option>
+                <option value="Ropa">Ropa</option>
+                </select>                
+                </form>
             <a href="Promociones.html">Promociones</a>
-            <a href="#">Vender</a>
-            <a href="#">Acerca de</a>
-            <a href="Outlet"></a>
+            <a href="Vender.html">Vender</a>
+            <a href="Acerca.html">Acerca de</a>
+            <a href="#">Outlet</a>
         </div>
     </nav>
     <!--Slider de Imagenes-->
