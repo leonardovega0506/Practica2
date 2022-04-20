@@ -1,47 +1,62 @@
 <!DOCTYPE HTML>
-<HTML lange =" es">
-   <HEAD>
-      <TITLE>Ayuda</TITLE>
+<HTML lange=" es">
 
-      <link rel=" shortcut icon "  href="usuario.png">
-      <img src= "images/tienda.jpg" alt= "tienda"  width= "120 " height= "100"/>   
-   </HEAD>
-   <BODY>
-    <label for="buscar">Buscar:</label>
-    <input type="buscar" id="buscar" name="b">
+<HEAD>
+    <TITLE>Ayuda</TITLE>
 
-    
-    <button>Buscar</button> &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;
+    <link rel=" shortcut icon " href="usuario.png">
+    <img src="images/tienda.jpg" alt="tienda" width="120 " height="100" />
+    <script src="js/app.js"></script>
+</HEAD>
 
-    <button type= "button"> Home </button>
-    <button type= "button"> configuracion </button>
-    <button type= "button"> ayuda </button>
+<BODY>
+    <!--Cabecero-->
+    <header>
+        <!--Icono Home-->
+        <div>
+            <a href="Home.html"><img src="images/casa.png" alt="Casa" width="40" height="40"></a>
+        </div>
+        <!--Barra Buscador-->
+        <input type="text">
+        <!--Botones del header-->
+        <div>
+            <menu type="toolbar">
+                <button><a href="Home.html">Home</a></button>
+                <button><a href="Configuracion.html">Configuraci&oacute;n</a></button>
+                <button><a href="Ayuda.html">Ayuda</a></button>
+            </menu>
+        </div>
+        <!--Iconos de Header-->
+        <div>
+            <a href="Usuario.html"><img src="images/user.png" alt="Usuario" width="40" height="40"></a>
+            <a href="Carrito.html"><img src="images/carrito.png" alt="Carrito" width="40" height="40"></a>
+        </div>
+    </header>
+    <!--Barra de Navegacion-->
+    <nav>
+        <div>
+            <form name="categorias" action="#" method="post">
+                <select name="categoria"
+                    onchange='document.location.href=document.categorias.categoria.options[document.categorias.categoria.selectedIndex].value;'>
+                    <option value="" disabled selected="selected">Categoria</option>
+                    <option value="Abarrotes.html">Abarrotes</option>
+                    <option value="Calzado.html">Calzado</option>
+                    <option value="Electrodomestico.html">Electronica</option>
+                    <option value="Mascotas.html">Mascotas</option>
+                    <option value="Ropa.html">Ropa</option>
+                </select>
+            </form>
+            <a href="Promociones.html">Promociones</a>
+            <a href="Vender.html">Vender</a>
+            <a href="Acerca.html">Acerca de</a>
+        </div>
+    </nav>
+    <!--Contenido-->
+    <br /> <br /> <br />
+    <label for="ayuda">Describe como te podemos ayudar</label>
+    <textarea name="ayuda" rows="10" cols="40"></textarea>
+    <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+    <button type="button" onclick="funcionAlert('Ayuda enviada')">Enviar</button> <button type="button">Cancelar...</button>
 
-    
-    <img src= "images/usuario.png" alt= "usuario"  width= "30 " height= "30"/> 
-    <img src= "images/car.png" alt= "car"  width= "30 " height= "30"/> 
 
-    <br/>
-    
-    <navegación >
-        <div >
-            <seleccionar  nombre =" categoría " id =" categoría " >
-            </seleccionar >
-            <a href =" # "> Promociones </a >
-            <a href =" # " > Vendedor </a >
-            <a  href =" # " > Categoria </a >
-            <a  href =" # " > Acerca de </a >
-            <a  href =" # " > Outlet </a >
-        </div >
-    </nav >
-
-    <br/> <br/> <br/>
-        
-
-        <label for="ayuda">Describe como te podemos ayudar</label> 
-        <textarea name="ayuda" rows="10" cols="40"></textarea>
-        <br/>  <br/>  <br/>  <br/>   <br/>  <br/>   <br/>  <br/>
-        <button type="button">Enviar</button>                  <button type="button">Cancelar...</button>
-
-
-   </BODY>
+</BODY>

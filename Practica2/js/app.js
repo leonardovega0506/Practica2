@@ -1,3 +1,3 @@
-function funcionAlert(){
-    alert("Producto Agregado")
+function funcionAlert(mensaje){
+    alert(mensaje);
 }

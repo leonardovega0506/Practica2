@@ -4,23 +4,48 @@
     <meta charset="UTF-8"
     name="viewport" content=" width=device-width, initial-scale=1.0">
     <TITLE>Configuracion</TITLE>
-
-    <img src= "images/tienda.jpg" alt= "tienda"  width= "80 " height= "100"/>   &nbsp;
-
-    <label for="site-search">Buscar</label>
-    <input type="search" id="Buscar" name="Buscar">
-    &nbsp; &nbsp; 
-        <button type= "button"> Home </button>
-        <button type= "button"> configuracion </button>
-        <button type= "button"> ayuda </button>
-
-        
-        <img src= "images/usuario.png" alt= "usuario"  width= "30 " height= "30"/> 
-        <img src= "images/car.png" alt= "car"  width= "30 " height= "30"/> 
-
-        <br/>
-        <br/>
+    <script src="js/app.js"></script>
    </head>
+       <!--Cabecero-->
+       <header>
+         <!--Icono Home-->
+         <div>
+             <a href="Home.html"><img src="images/casa.png" alt="Casa" width="40" height="40"></a>
+         </div>
+         <!--Barra Buscador-->
+         <input type="text">
+         <!--Botones del header-->
+         <div>
+             <menu type="toolbar">
+                 <button><a href="Home.html">Home</a></button>
+                 <button><a href="Configuracion.html">Configuraci&oacute;n</a></button>
+                 <button><a href="Ayuda.html">Ayuda</a></button>
+             </menu>
+         </div>
+         <!--Iconos de Header-->
+         <div>
+             <a href="Usuario.html"><img src="images/user.png" alt="Usuario" width="40" height="40"></a>
+             <a href="Carrito.html"><img src="images/carrito.png" alt="Carrito" width="40" height="40"></a>
+         </div>
+     </header>
+     <!--Barra de Navegacion-->
+     <nav>
+         <div>
+             <form name="categorias" action="#" method="post">
+                 <select name="categoria" onchange='document.location.href=document.categorias.categoria.options[document.categorias.categoria.selectedIndex].value;'>
+                 <option value="" disabled selected="selected">Categoria</option>
+                 <option value="Abarrotes.html">Abarrotes</option>
+                 <option value="Calzado.html">Calzado</option>
+                 <option value="Electrodomestico.html">Electronica</option>
+                 <option value="Mascotas.html">Mascotas</option>
+                 <option value="Ropa.html">Ropa</option>
+                 </select>                
+                 </form>
+             <a href="Promociones.html">Promociones</a>
+             <a href="Vender.html">Vender</a>
+             <a href="Acerca.html">Acerca de</a>
+         </div>
+     </nav>
    <body>
     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <img src= "images/engra.png" alt= "tienda"  width= "80 " height= "100"/> 
 
@@ -35,7 +60,7 @@
       <label><input type="checkbox" id="cbox4" value="fourth checkbox"> Abarrotes</label>
       <label><input type="checkbox" id="cbox5" value="fifth checkbox"> Zapatos</label><br/> <br/><br/> 
 
-      <button type = "button">Guardar</button>
+      <button type = "button" onclick="funcionAlert('Configuracion Correcta')">Guardar</button>
       &nbsp; &nbsp; &nbsp; <button type="button">Cancelar</button>
 
 
