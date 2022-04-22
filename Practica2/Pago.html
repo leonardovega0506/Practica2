@@ -1,71 +1,62 @@
 <!DOCTYPE html>
-<HTML lange = "es"></HTML>
-   <head>
-    <meta charset="UTF-8"
-    name="viewport" content=" width=device-width, initial-scale=1.0">
-    <TITLE>Pago</TITLE>
+<html lang="es">
 
-    <label for="size_2">Tipo de tarjeta</label>     
-     &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  <label for="size_3">Orden de pago</label>
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/estilos.css">
+   <title>Pago</title>
+</head>
 
-       <br/> <br/>
-     <input type="radio" id="Credito" name="credito" value="Credito">
-  <label for="Credito">Credito</label>
+<body>
+   <!--Contenido-->
+   <section>
+      <!--Tarjeta-->
+      <div class="contenedor-t">
+         <h2>Orden de Pago</h2>
+         <form>
+            <label for="tipo">Tipo de Tarjeta</label><br>
+            <input type="radio" name="tipoTarjeta" id="c" value="c">
+            <label for="credito">Credito</label>
+            <input type="radio" name="tipoTarjeta" id="d" value="d">
+            <label for="debito">Debito</label><br><br>
+            <label for="numTarjeta">Numero de Tarjeta</label>
+            <input type="text" id="numTarjeta">
+            &nbsp;
+            <label for="cvv">CVV</label>
+            <input type="password" id="cvv" name="cvv">
+            &nbsp; &nbsp;
+            <label for="fechaCad">Fecha de Caducidad</label>
+            <input type="date" name="fechaCad" id="fechaCad">
+         </form>
+      </div>
+      <!--Datos-->
+      <div class="contenedor-d">
+         <h2>Datos de la Tarjeta</h2>
+         <form>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre">
+            &nbsp;
+            <label for="apellidop">Apellido Paterno</label>
+            <input type="text" id="apellidop" name="apellidop">
+            &nbsp;
+            <label for="apellidom">Apellido Materno</label>
+            <input type="text" id="apellidom" name="apellidom">
+            <br><br>
+            <label for="direccion">Direcci&oacute;n</label>
+            <textarea name="direccion" id="direccion" cols="30" rows="10"></textarea>
+            &nbsp; &nbsp;
+            <label for="cp">C.P.</label>
+            <input type="text" name="cp" id="cp">
+         </form>
+      </div>
+      <br>
+      <div class="contenedor-b">
+         <a href="Home.html">Cancelar Pago</a>
+         <a href="PagoExitoso.html">Enviar Pago</a>
+      </div>
+   </section>
+</body>
 
-  <input type="radio" id="Debito" name="debito" value="Debito">
-  <label for="Debito">Debito</label>  
-  <br/> <br/>
-  
-
-  
-   </head>
-   <body>
-
-    <label for="size_2">Datos de la tarjeta</label>   <br/> <br/>
-  
-
-    <label for= "size_2" > Numero de la tarjeta </label>
-    <input type="text" id="NumeroTar" name="NumeroTar" required
-    minlength="4" maxlength="8" size="10">  &nbsp; &nbsp; &nbsp; &nbsp; 
-
-    <label for= "size_2" > CVV </label>
-    <input type="text" id="CVV" name="CVV" required
-    minlength="4" maxlength="8" size="10"> &nbsp; 
-
-    <label for= "size_2" > Fecha de caducidad </label>
-    <input type="date" id="fecha" name="FechaCadu"
-       value="2015-07-22"
-       min="2015-01-01" max="2029-12-31">
-       <br/> <br/>
-
-       <label for="size_2">Datos personales</label>  <br/> <br/>
-
-       <label for= "size_2" > Nombre </label>
-    <input type="text" id="nombre" name="nombre" required
-    minlength="4" maxlength="8" size="10"> &nbsp;
-
-    <label for= "size_2" > Apellido paterno </label>
-    <input type="text" id="AP" name="AP" required
-    minlength="4" maxlength="8" size="10"> &nbsp;
-
-    <label for= "size_2" > Apelido Materno </label>
-    <input type="text" id="AM" name="AM" required
-    minlength="4" maxlength="8" size="10"> &nbsp; <br/> <br/>
-
-    <label for= "Direccion" > direccion </label> <br/>
-        <textarea id="Direccion" name="Direccion" rows="4" cols="50"></textarea>  &nbsp;
-        &nbsp;
-
-
-        <label for= "size_2" > CP </label>
-    <input type="text" id="CP" name="CP" required
-    minlength="4" maxlength="8" size="10"> &nbsp; <br/> <br/>
-
-
-    <BUtton type= "button" onclick="funcionAlert('Se ha cancelado el pago')"> Cancelar Pago </BUtton> &nbsp; &nbsp;
-    <BUtton type= "button" onclick="funcionAlert('Pago Enviado...')"> Enviar Pago </BUtton> &nbsp; &nbsp;
-
-
-
-   </body>
 </html>

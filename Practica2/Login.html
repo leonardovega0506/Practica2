@@ -1,45 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&display=swap" rel="stylesheet">
     <title>Login</title>
 </head>
+
 <body>
     <!--Cabecero-->
-    <header>
-        <div>
+    <header class="header-1">
+        <div class="contenedor-h">
             <div>
-                <h1>Login</h1>               
+                <h1 class="h-cabeceros">Login</h1>
             </div>
             <div>
-                <img src="images/user.png" alt="Usuario">
+                <img src="images/user.png" alt="Usuario" id="img-usuario">
             </div>
         </div>
     </header>
     <!--Contenido-->
     <section>
-        <div>
-            <label for="txtUsuario">Usuario</label>
-            <input type="text" name="txtUsuario">
+        <div class="contenedor-login">
+            <label for="txtUsuario" id="labelUsu1">Usuario</label>
+            <input type="text" name="txtUsuario" id="txtUsuario" required>
             <br>
             <br>
-            <label for="txtPassword">Contrase&ntilde;a</label>
-            <input type="text" name="txtPassword">
+            <label for="txtPassword" id="labelPass1">Contrase&ntilde;a</label>
+            <input type="text" name="txtPassword" id="txtPassword" required>
             <br>
+            <br>
+            <br>
+            <a href="Home.html" onclick="funcionAlert('Usuario Y password correcto')" id="login">Ingresar</a>
         </div>
-        <br>
-        <br>
-        <a href="Home.html" onclick="funcionAlert('Usuario Y password correcto')">Ingresar</a>
     </section>
     <!--Pie de página-->
     <footer>
         <div>
-            <a href="Registrarse.html">Registrarse</a>
-            <p>¿Olvidaste tu contrase&ntilde;a? <br>
-            Presiona <a href="RecuperarContraseña.html">aquí</a></p>
+            <a id="a-r" href="Registrarse.html">Registrarse</a>
+            <p class="contra">¿Olvidaste tu contrase&ntilde;a? <br>
+                Presiona <a href="RecuperarContraseña.html">aquí</a></p>
         </div>
     </footer>
 </body>
+
 </html>

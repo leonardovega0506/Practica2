@@ -1,0 +1,558 @@
+
+.h-cabeceros{
+    text-align: center;
+    font-size: 40px;
+    margin: auto;
+    padding: 15px;
+    color: #7275A8;
+    font-family: 'Kanit', sans-serif;
+    font-style: bold;
+}
+#img-usuario{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 85px;
+    left: 240px;
+
+}
+div.contenedor-h{
+    border: solid 3px black;
+    width: 600px;
+    height: 250px;
+    position: absolute;
+    top: 20px;
+    bottom: 700px;
+    left: 350px;
+    
+}
+div.contenedor-login{
+    border: solid 3px black;
+    position: relative;
+    width: 600px;
+    height: 300px;
+    top: 230px;
+    left: 343px;
+}
+.contenedor-login label{
+    font-family: 'Kanit', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    padding: 15px;
+    margin: auto;
+    position: relative;
+    top: 30px;
+}
+.contenedor-login input{
+    border: solid 2px black;
+    border-top: 3px;
+    border-left: 3px;
+    border-right: 3px;
+    position: relative;
+    top: 20px;
+    left: 210px;
+}
+a#login{
+    width: 85px;
+    height: 40px;
+    font-family: 'Kanit',sans-serif;
+    font-size: 24px;
+    position: absolute;
+    left: 250px;
+    bottom: 30px;
+    border: solid 3px black;
+    color: black;
+    text-decoration: none;
+}
+a#login:hover, a#login:active{
+    background-color: aqua;
+}
+footer{
+    width: 1330px;
+    border: 1px solid black;
+    position: absolute;
+    top: 100%;
+
+}
+#a-r{
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 25%;
+    text-decoration: none;
+}
+p{
+    font-family: 'Kanit' ,sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+/*Slider */
+.slider{
+    margin: auto;
+    width: 700px;
+    padding: 30px;
+
+}
+ul,li{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+ul.slider{
+    position: relative;
+    width: 800px;
+    height: 200px;
+}
+ul.slider li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    background-color: white;
+    transition: opacity 0.5s;
+}
+ul.slider li img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+ul.slider li:first-child{
+    opacity: 1;
+}
+ul.slider li:target{
+    opacity: 1;
+}
+.menu{
+    text-align: center;
+    margin: 20px;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+.menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-family: 20x;
+    border-radius: 100%;
+    position: relative;
+    bottom: 55px;
+}
+/*Barra*/
+
+div.barra1{
+    display: inline-block;
+    border: solid 2px black;
+    width: 1285px;
+    height: 50px;
+    margin: auto;
+    padding: 20px;
+}
+.barra img{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+#barra-buscador{
+    border: solid 2px black;
+    border-top: 3px;
+    border-left: 3px;
+    border-right: 3px;
+    position: absolute;
+    top: 60px;
+    width: 800px;
+    left: 100px;
+}
+.menu-barra{
+    position: absolute;
+    top: 40px;
+    left: 900px;
+}
+.imgs img{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    bottom: 50px;
+    left: 1150px;
+}
+/*Barra 2*/
+div.barra2{
+    position: relative;
+    top: -15px;
+    display: inline-block;
+    border: solid 2px black;
+    width: 1285px;
+    height: 1px;
+    margin: auto;
+    padding: 20px;
+}
+div.barra2 a{
+    position: relative;
+    bottom: 35px;
+    left: 110px;
+    padding: 0px 100px;
+}
+div.barra2 select{
+    position: relative;
+    bottom: 15px;
+}
+/*Contenido1*/
+section{
+    width: 1350px;
+    height: 900px;
+}
+div.inline1-v{
+    display: inline;
+}
+div.inline2-v{
+    position: relative;
+    bottom: 200px;
+    left: 450px;
+}
+div.inline3-v{
+    position: absolute;
+    top: 585px;
+    left: 910px;
+}
+.buscado{
+    position: relative;
+    bottom: 200px;
+}
+.inline1-b{
+    display: inline;
+}
+div.inline2-b{
+    position: relative;
+    bottom: 202px;
+    left: 450px;
+}
+div.inline3-b{
+    position: absolute;
+    top: 45px;
+    left: 900px;
+}
+.promocion{
+    position: relative;
+    bottom: 400px;
+}
+.inline1-p{
+    display: inline;
+    position: absolute;
+    bottom: 200px;
+}
+div.inline2-p{
+    display: inline;
+    position: relative;
+    bottom: -2px;
+    left: 450px;
+}
+div.inline3-p{
+    display: inline;
+    position: relative;
+    bottom: 200px;
+    left: 900px;
+}
+/*footer*/
+footer.footer-h{
+    border: solid 3px black;
+    width: 1200px;
+    height: 100px;
+    position: relative;
+    bottom: 100%;
+    margin: auto;
+}
+/*Categorias*/
+.categoria-u{
+    display: inline;
+}
+.categoria1{
+    position: relative;
+    top: 10px;
+    border: 3px solid black;
+    width: 550px;
+    height: 300px;
+}
+.categoria1 p{
+    position: relative;
+    bottom: 130px;
+    left: 110px;
+
+}
+#compra1{
+    border: 3px solid black;
+    width: 310px;
+    position: absolute;
+    top: 50px;
+    
+}
+div.parrafos{
+    position: relative;
+    top: 150px;
+}
+#iconos{
+    position: absolute;
+    top: 220px;
+    left: 350px;
+}
+.categoria2{
+    position: relative;
+    bottom: 295px;
+    border: 3px solid black;
+    width: 550px;
+    height: 300px;
+    left: 650px;
+}
+.parrafos1{
+    position: relative;
+    top: 30px;
+    left: 110px;
+}
+.categoria3{
+    position: relative;
+    bottom: 200px;
+    border: 3px solid black;
+    width: 550px;
+    height: 300px;
+}
+.categoria4{
+    position: relative;
+    bottom: 505px;
+    left: 650px;
+    border: 3px solid black;
+    width: 550px;
+    height: 300px;
+}
+/*Nombres*/
+div.nombre{
+    border: 3px solid black;
+    width: 800px;
+    padding: 25px;
+    margin: 50px;
+}
+.nombre1{
+    position: relative;
+    top: 30px;
+}
+.parrafos2{
+    position: relative;
+    bottom: 100px;
+    left: 100px;
+}
+/*ayuda*/
+textarea.ayuda{
+    height: 300px;
+    width: 1100px;
+    margin: 15px;
+    padding: auto;
+}
+/*Carrito*/
+.compras{
+    width: 600px;
+    margin: 10px;
+    border: 3px solid black;
+    height: 550px;
+}
+#compras1{
+    position: relative;
+    top: 70px;
+    left: 10px;
+}
+.botones{
+    width: 580px;
+    padding: 10px;
+    margin: 10px;
+    height: 50px;
+    border: 3px solid black;
+}
+.botones a{
+    margin: 80px;
+}
+.recomendaciones{
+    border: 3px solid black;
+    width: 550px;
+    height: 800px;
+    position: relative;
+    left: 750px;
+    bottom: 650px;
+}
+.compras2{
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+/*Vender*/
+.vender-c{
+    border: solid 3px black;
+    width: 600px;
+    height: 400px;
+    margin: 10px;
+}
+.vender-c label{
+    position: relative;
+    left: 40px;
+    top: 30px;
+}
+.vender-c input{
+    position: relative;
+    top: 30px;
+    left: 55px;
+}
+.vender-c select{
+    position: relative;
+    top: 30px;
+    left: 60px;
+}
+textarea.desc{
+    position:relative;
+    top: 30px;
+    left: 55px;
+}
+#descP{
+    position: sticky;
+    top: 150px;
+}
+.vender-i{
+    position: relative;
+    margin: 10px;
+    border: 3px solid black;
+    width: 450px;
+    bottom: 420px;
+    left: 850px;
+}
+.vender-i img{
+    padding: 10px;
+    margin: 10px;
+}
+.vender-i button{
+    padding: 10px;
+    margin: 10px;
+}
+.vender-b{
+    position: relative;
+    border: 3px solid black;
+    width: 500px;
+    height: 100px;
+    bottom: 500px;
+    margin: 10px;
+}
+/*Configuracion*/
+.config-c{
+    position: relative;
+    border: 3px solid black;
+    width: 1000px;
+    margin: auto;
+}
+.config-c input{
+    margin: 15px;
+    position: relative;
+}
+.config-c label{
+    margin: 15px;
+    position: relative;
+    left: 250px;
+}
+.config-b{
+    position: relative;
+    top: 50px;
+    left: 570px;
+}
+.config-b button{
+    margin: 20px;
+}
+/*Usuario*/
+.usu{
+    position: relative;
+    width: 400px;
+    height: 350px;
+    border: 3px solid black;
+    left: 450px;
+}s
+.usu label{
+    position: relative;
+    top: 80px;
+    margin: 15px;
+    text-align: center;
+}
+.usu input{
+    position: relative;
+    top: 80px;
+    margin: 15px;
+}
+#buttonG{
+    position: relative;
+    top: 180px;
+    left: 80px;
+    margin: 10px;
+}
+/*Pago*/
+.contenedor-t{
+    width: 1200px;
+    height: 200px;
+    border: 3px solid black;
+    padding: 25px;
+    text-align: center;
+}
+.contenedor-d{
+    width: 1200px;
+    height: 350px;
+    border: 3px solid black;
+    padding-top: 30px;
+    margin: 25px;
+    text-align: center;
+   
+}
+.contenedor-b a{
+    margin: 30px;
+    position: relative;
+    left: 450px;
+}
+.compra-e{
+    width: 50%;
+    height: 250px;
+    border: 3px solid black;
+    position: relative;
+    left: 20%;
+    text-align: center;
+}
+#b-home{
+    position: relative;
+    left: 530px;
+    top: 30px;
+}
+.contra-r{
+    width: 700px;
+    height: 250px;
+    border: 3px solid black;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    left: 300px;
+}
+.registrar{
+    position: relative;
+    top: 80px;
+    left: 300px;
+    width: 600px;
+    height: 350px;
+    border: 3px solid black;
+    text-align: center;
+    margin: 30px;
+}
+.registrar-b{
+    position: relative;
+    top: 100px;
+}
+.registrar-b a{
+    padding: 15px;
+    margin: auto;
+}
