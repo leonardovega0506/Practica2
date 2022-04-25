@@ -4,34 +4,42 @@
 <HEAD>
    <meta charset="UTF-8" name="viewport" content=" width=device-width, initial-scale=1.0">
    <TITLE>Registrarse</TITLE>
+   <link rel="stylesheet" href="css/estilos.css">
+   <link rel="icon" href="images/upiicsa.png">
    <script src="js/app.js"></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </HEAD>
 
 <BODY>
-   <div id="general">
+   <div class="registrar">
       <h1>Registrarse </h1>
-      <label for="size_2">Nombre de usuario</label>
-      <input type="text" id="Email" name="Email" required minlength="4" maxlength="8" size="10">
-      </p>
-      </p>
-      <label for="size_2"> Email</label>
-      <input type="text" id="Email" name="Email" required minlength="4" maxlength="8" size="10">
+      <label for="usuario">Nombre de usuario</label>
+      <input type="text" id="usuario" name="usuario" required>
+      <br><br>
+      <label for="email"> Email</label>
+      <input type="text" id="email" name="email" required minlength="4" maxlength="8" size="10">
       <br/> <br/>
-      <label for="size_2"> Sexo</label> <select name="sexo">
+      <label for="sexo"> Sexo</label>
+       <select name="sexo">
          <option>Hombre</option>
          <option>Mujer</option>
-      </select> <button type="button">Enviar</button>
-      <br/> <br/>
-      <label for="size_2"> Edad</label> <input type="number" name="numero" value="25" min="15" max="80" step="1" />
-      <button type="button">Cancelar</button>
-      <br /> <br />
-      <label for="size_2"> Contraseña</label>
-      <input type="password" id="Email" name="Email" required minlength="4" maxlength="8" size="10">
-      <br /> <br />
-      <label for="size_2"> Repetir contraseña</label>
-      <input type="password" id="Email" name="Email" required minlength="4" maxlength="8" size="10">
-      <br /> <br />
-
+       </select>
+         <br/><br/>
+         <label for="edad"> Edad</label> <input type="number" name="edad" value="25" min="15" max="80" step="1" />
+         <br /> <br />
+         <label for="size_2"> Contraseña</label>
+         <input type="password" id="Email" name="Email" required minlength="4" maxlength="8" size="10">
+         <br /> <br />
+         <label for="size_2"> Repetir contraseña</label>
+         <input type="password" id="Email" name="Email" required minlength="4" maxlength="8" size="10">
+         <br /> <br />
+      </select>
+      <div class="registrar-b">
+         <button><a href="Login.html">Enviar</a></button>
+         <button><a href="Login.html">Cancelar</a></button>
+      </div>
 </BODY>
 
 </HTML>

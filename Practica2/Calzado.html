@@ -6,106 +6,139 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calzado</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="images/upiicsa.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
     <script src="js/app.js"></script>
 </head>
 
 <body>
     <!--Cabecero-->
     <header>
-        <!--Icono Home-->
-        <div>
-            <a href="Home.html"><img src="images/casa.png" alt="Casa" width="40" height="40"></a>
-        </div>
-        <!--Barra Buscador-->
-        <input type="text">
-        <!--Botones del header-->
-        <div>
-            <menu type="toolbar">
-                <button><a href="Home.html">Home</a></button>
-                <button><a href="Configuracion.html">Configuraci&oacute;n</a></button>
-                <button><a href="Ayuda.html">Ayuda</a></button>
-            </menu>
-        </div>
-        <!--Iconos de Header-->
-        <div>
-            <a href="Usuario.html"><img src="images/user.png" alt="Usuario" width="40" height="40"></a>
-            <a href="Carrito.html"><img src="images/carrito.png" alt="Carrito" width="40" height="40"></a>
+        <div class="barra1">
+            <!--Icono Home-->
+            <div class="barra">
+                <a href="Home.html"><img src="images/casa.png" alt="Casa"></a>
+            </div>
+            <!--Barra Buscador-->
+            <input type="text" id="barra-buscador">
+            <!--Botones del header-->
+            <div class="menu-barra">
+                <menu type="toolbar">
+                    <button class="boton-barra"><a href="Home.html">Home</a></button>
+                    <button class="boton-barra"><a href="Configuracion.html">Configuraci&oacute;n</a></button>
+                    <button class="boton-barra"><a href="Ayuda.html">Ayuda</a></button>
+                </menu>
+            </div>
+            <!--Iconos de Header-->
+            <div class="imgs">
+                <a href="Usuario.html"><img src="images/usuario1.png" alt="Usuario" width="40" height="40"></a>
+                <a href="Carrito.html"><img src="images/carrito1.png" alt="Carrito" width="40" height="40"></a>
+            </div>
         </div>
     </header>
     <!--Barra de Navegacion-->
     <nav>
-        <div>
+        <div class="barra2">
             <form name="categorias" action="#" method="post">
-                <select name="categoria" onchange='document.location.href=document.categorias.categoria.options[document.categorias.categoria.selectedIndex].value;'>
-                <option value="" disabled selected="selected">Categoria</option>
-                <option value="Abarrotes.html">Abarrotes</option>
-                <option value="Calzado.html">Calzado</option>
-                <option value="Electrodomestico.html">Electronica</option>
-                <option value="Mascotas.html">Mascotas</option>
-                <option value="Ropa.html">Ropa</option>
-                </select>                
-                </form>
+                <select name="categoria"
+                    onchange='document.location.href=document.categorias.categoria.options[document.categorias.categoria.selectedIndex].value;'>
+                    <option value="" disabled selected="selected">Categoria</option>
+                    <option value="Abarrotes.html">Abarrotes</option>
+                    <option value="Calzado.html">Calzado</option>
+                    <option value="Electrodomestico.html">Electronica</option>
+                    <option value="Mascotas.html">Mascotas</option>
+                    <option value="Ropa.html">Ropa</option>
+                </select>
+            </form>
             <a href="Promociones.html">Promociones</a>
             <a href="Vender.html">Vender</a>
             <a href="Acerca.html">Acerca de</a>
         </div>
     </nav>
+    <!--Slider de Imagenes-->
+    <div class="slider1">
+        <ul class="slider">
+            <li id="slide1"><img src="images/tenis1.jpg"></li>
+            <li id="slide2"><img src="images/tenis2.jfif"></li>
+            <li id="slide3"><img src="images/tenis3.jfif"></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="#slide1">1</a></li>
+            <li><a href="#slide2">2</a></li>
+            <li><a href="#slide3">3</a></li>
+        </ul>
+    </div>
     <!--Contenido-->
     <section>
         <!--Categoria 1-->
-        <div>
-            <div>
-                <div>
-                    <img src="images/Shop.png" alt="Compras">
+        <div class="categoria-u">
+            <div class="categoria1">
+                <div id="compra1">
+                    <img src="images/tenis4.png" alt="Compras" width="250px">
                 </div>
-                <div>
+                <div class="parrafos">
                     <p>Clave</p>
                     <p>Nombre</p>
                     <p>Categoria</p>
                     <p>Descripci&oacute;n</p>
                 </div>
-                <img src="images/addCarrito.png" alt="addCarrito" width="50" height="50" onclick="funcionAlert('Producto Agregado')">
+                <img src="images/addCarrito.png" alt="addCarrito" width="50" height="50"
+                    onclick="funcionAlert('Producto Agregado')" id="iconos">
             </div>
-            <div>
-                <div>
-                    <img src="images/Shop.png" alt="Compras">
+            <div class="categoria2">
+                <div id="compra1">
+                    <img src="images/tenis5.jfif" alt="Compras" width="250px">
                 </div>
-                <div>
+                <div class="parrafos1">
                     <p>Clave</p>
                     <p>Nombre</p>
                     <p>Categoria</p>
                     <p>Descripci&oacute;n</p>
                 </div>
-                <img src="images/addCarrito.png" alt="addCarrito" width="50" height="50" onclick="funcionAlert('Producto Agregado')">
+                <img src="images/addCarrito.png" alt="addCarrito" width="50" height="50"
+                    onclick="funcionAlert('Producto Agregado')" id="iconos">
             </div>
         </div>
         <!--Categoria 2-->
-        <div>
-            <div>
-                <div>
-                    <img src="images/Shop.png" alt="Compras">
+        <div class="categoria-u">
+            <div class="categoria3">
+                <div id="compra1">
+                    <img src="images/tenis6.jpg" alt="Compras" width="250px">
                 </div>
-                <div>
+                <div class="parrafos1">
                     <p>Clave</p>
                     <p>Nombre</p>
                     <p>Categoria</p>
                     <p>Descripci&oacute;n</p>
                 </div>
-                <img src="images/addCarrito.png" alt="addCarrito" width="50" height="50" onclick="funcionAlert('Producto Agregado')">
+                <img src="images/addCarrito.png" alt="addCarrito" width="50" height="50"
+                    onclick="funcionAlert('Producto Agregado')" id="iconos">
             </div>
-            <div>
-                <div>
-                    <img src="images/Shop.png" alt="Compras">
+            <div class="categoria4">
+                <div id="compra1">
+                    <img src="images/tenis7.jpg" alt="Compras" width="250px">
                 </div>
-                <div>
+                <div class="parrafos1">
                     <p>Clave</p>
                     <p>Nombre</p>
                     <p>Categoria</p>
                     <p>Descripci&oacute;n</p>
                 </div>
-                <img src="images/addCarrito.png" alt="addCarrito" width="50" height="50" onclick="funcionAlert('Producto Agregado')">
+                <img src="images/addCarrito.png" alt="addCarrito" width="50" height="50"
+                    onclick="funcionAlert('Producto Agregado')" id="iconos">
             </div>
         </div>
     </section>
+    <!--Pie de pagina-->
+    <footer class="footer-h">
+        <div>
+            <p>Creado por:</p>
+            <p>Sandin Toledo Brandon &nbsp; Vega P&eacute;rez Leonardo</p>
+        </div>
+    </footer>
 </body>
+
 </html>

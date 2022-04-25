@@ -3,38 +3,42 @@
 
 <HEAD>
     <TITLE>Ayuda</TITLE>
-
-    <link rel=" shortcut icon " href="usuario.png">
-    <img src="images/tienda.jpg" alt="tienda" width="120 " height="100" />
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="images/upiicsa.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
     <script src="js/app.js"></script>
 </HEAD>
 
 <BODY>
     <!--Cabecero-->
     <header>
-        <!--Icono Home-->
-        <div>
-            <a href="Home.html"><img src="images/casa.png" alt="Casa" width="40" height="40"></a>
-        </div>
-        <!--Barra Buscador-->
-        <input type="text">
-        <!--Botones del header-->
-        <div>
-            <menu type="toolbar">
-                <button><a href="Home.html">Home</a></button>
-                <button><a href="Configuracion.html">Configuraci&oacute;n</a></button>
-                <button><a href="Ayuda.html">Ayuda</a></button>
-            </menu>
-        </div>
-        <!--Iconos de Header-->
-        <div>
-            <a href="Usuario.html"><img src="images/user.png" alt="Usuario" width="40" height="40"></a>
-            <a href="Carrito.html"><img src="images/carrito.png" alt="Carrito" width="40" height="40"></a>
+        <div class="barra1">
+            <!--Icono Home-->
+            <div class="barra">
+                <a href="Home.html"><img src="images/casa.png" alt="Casa"></a>
+            </div>
+            <!--Barra Buscador-->
+            <input type="text" id="barra-buscador">
+            <!--Botones del header-->
+            <div class="menu-barra">
+                <menu type="toolbar">
+                    <button class="boton-barra"><a href="Home.html">Home</a></button>
+                    <button class="boton-barra"><a href="Configuracion.html">Configuraci&oacute;n</a></button>
+                    <button class="boton-barra"><a href="Ayuda.html">Ayuda</a></button>
+                </menu>
+            </div>
+            <!--Iconos de Header-->
+            <div class="imgs">
+                <a href="Usuario.html"><img src="images/usuario1.png" alt="Usuario" width="40" height="40"></a>
+                <a href="Carrito.html"><img src="images/carrito1.png" alt="Carrito" width="40" height="40"></a>
+            </div>
         </div>
     </header>
     <!--Barra de Navegacion-->
     <nav>
-        <div>
+        <div class="barra2">
             <form name="categorias" action="#" method="post">
                 <select name="categoria"
                     onchange='document.location.href=document.categorias.categoria.options[document.categorias.categoria.selectedIndex].value;'>
@@ -52,11 +56,12 @@
         </div>
     </nav>
     <!--Contenido-->
-    <br /> <br /> <br />
-    <label for="ayuda">Describe como te podemos ayudar</label>
-    <textarea name="ayuda" rows="10" cols="40"></textarea>
-    <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
-    <button type="button" onclick="funcionAlert('Ayuda enviada')">Enviar</button> <button type="button">Cancelar...</button>
-
-
+    <div class="contenedor-a">
+        <h1>Describe como te podemos ayudar</h1>
+        <textarea name="ayuda" class="ayuda" rows="10" cols="40"></textarea>
+        <div class="boton-a">
+            <button onclick="funcionAlert('Ayuda enviada')"><a href="Home.html">Enviar</a></button>
+            <button><a href="Home.html">Cancelar</a></button>
+        </div>
+    </div>
 </BODY>
