@@ -7,12 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vender</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="images/upiicsa.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
     <script src="js/app.js"></script>
 </head>
 
 <body>
-       <!--Cabecero-->
-       <header>
+    <!--Cabecero-->
+    <header>
         <div class="barra1">
             <!--Icono Home-->
             <div class="barra">
@@ -23,9 +27,9 @@
             <!--Botones del header-->
             <div class="menu-barra">
                 <menu type="toolbar">
-                    <button><a href="Home.html">Home</a></button>
-                    <button><a href="Configuracion.html">Configuraci&oacute;n</a></button>
-                    <button><a href="Ayuda.html">Ayuda</a></button>
+                    <button class="boton-barra"><a href="Home.html">Home</a></button>
+                    <button class="boton-barra"><a href="Configuracion.html">Configuraci&oacute;n</a></button>
+                    <button class="boton-barra"><a href="Ayuda.html">Ayuda</a></button>
                 </menu>
             </div>
             <!--Iconos de Header-->
@@ -79,25 +83,25 @@
                     <label for="colorProducto">Color</label>
                     <input type="color" name="color" id="color">
                     <br><br>
-                    <label for="descPro" id="descP">Descripci&oacute;n del Producto</label>                
-                    <textarea class="desc"  name="descPro" cols="30" rows="10" width="50px"></textarea>
+                    <label for="descPro" id="descP">Descripci&oacute;n del Producto</label>
+                    <textarea class="desc" name="descPro" cols="30" rows="10" width="50px"></textarea>
                 </form>
             </div>
             <!--Imagen-->
             <div class="vender-i">
                 <div>
-                    <img src="images/Shop.png" alt="imagenRef">
+                    <img src="images/celular.jpg" alt="imagenRef" width="300px">
                     <button disabled>Subir archvio</button>
                 </div>
                 <div>
-                    <img src="images/Shop.png" alt="imagenRef">
+                    <img src="images/polo.jpg" alt="imagenRef" width="300px">
                     <button disabled>Subir archvio</button>
                 </div>
             </div>
             <!--Botones-->
             <div class="vender-b">
-                <a href="Home.html" onclick="funcionAlert('Venta Reealizada')">Publicar</a> &nbsp;
-                <a href="Home.html">Cancelar</a>
+                <a href="Home.html" onclick="funcionAlert('Venta Reealizada')" class="boton">Publicar</a> &nbsp;
+                <a href="Home.html" class="boton">Cancelar</a>
             </div>
         </div>
     </section>

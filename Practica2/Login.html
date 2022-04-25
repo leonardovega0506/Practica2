@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="images/upiicsa.png">
+    <title>Login</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&display=swap" rel="stylesheet">
-    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="login">
     <!--Cabecero-->
     <header class="header-1">
         <div class="contenedor-h">
@@ -20,23 +21,26 @@
                 <h1 class="h-cabeceros">Login</h1>
             </div>
             <div>
-                <img src="images/user.png" alt="Usuario" id="img-usuario">
+                <img src="images/usuario.png" alt="Usuario" id="img-usuario">
             </div>
         </div>
     </header>
     <!--Contenido-->
     <section>
         <div class="contenedor-login">
-            <label for="txtUsuario" id="labelUsu1">Usuario</label>
-            <input type="text" name="txtUsuario" id="txtUsuario" required>
-            <br>
-            <br>
-            <label for="txtPassword" id="labelPass1">Contrase&ntilde;a</label>
-            <input type="text" name="txtPassword" id="txtPassword" required>
-            <br>
-            <br>
-            <br>
-            <a href="Home.html" onclick="funcionAlert('Usuario Y password correcto')" id="login">Ingresar</a>
+            <form method="get">
+                <label for="txtUsuario" id="labelUsu1">Usuario</label>
+                <input type="text" name="txtUsuario" id="txtUsuario" required>
+                <br>
+                <br>
+                <label for="txtPassword" id="labelPass1">Contrase&ntilde;a</label>
+                <input type="text" name="txtPassword" id="txtPassword" required>
+                <br>
+                <br>
+                <br>
+                <a href="Home.html" onclick="funcionAlert('Usuario Y password correcto')" id="login">Ingresar</a>
+            </form>
+
         </div>
     </section>
     <!--Pie de página-->

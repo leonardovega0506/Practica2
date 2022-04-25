@@ -1,42 +1,47 @@
-
+body.login{
+    background-color: #F2F2F2;
+}
+body{
+    background-color: #F2F2F2;;
+}
 .h-cabeceros{
     text-align: center;
     font-size: 40px;
-    margin: auto;
-    padding: 15px;
-    color: #7275A8;
-    font-family: 'Kanit', sans-serif;
+    color: #735050;
+    font-family: 'Raleway', sans-serif;
     font-style: bold;
 }
 #img-usuario{
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
     position: absolute;
     top: 85px;
     left: 240px;
 
 }
 div.contenedor-h{
-    border: solid 3px black;
+    background-color: #BFBFBF;
     width: 600px;
     height: 250px;
     position: absolute;
     top: 20px;
     bottom: 700px;
     left: 350px;
+    font-family: 'Raleway', sans-serif;
     
 }
 div.contenedor-login{
-    border: solid 3px black;
+    background-color:#BFBFBF ;
     position: relative;
     width: 600px;
     height: 300px;
     top: 230px;
     left: 343px;
+    font-family: 'Raleway', sans-serif;
 }
 .contenedor-login label{
-    font-family: 'Kanit', sans-serif;
     font-size: 18px;
+    color: #737373;
     text-align: center;
     display: block;
     padding: 15px;
@@ -45,7 +50,8 @@ div.contenedor-login{
     top: 30px;
 }
 .contenedor-login input{
-    border: solid 2px black;
+    background-color: #BFBFBF;
+    border: solid 1px black;
     border-top: 3px;
     border-left: 3px;
     border-right: 3px;
@@ -54,25 +60,29 @@ div.contenedor-login{
     left: 210px;
 }
 a#login{
-    width: 85px;
+    width: 110px;
+    text-align: center;
     height: 40px;
-    font-family: 'Kanit',sans-serif;
+    font-family: 'Signika Negative', sans-serif;
     font-size: 24px;
     position: absolute;
     left: 250px;
     bottom: 30px;
-    border: solid 3px black;
-    color: black;
+    background-color: #BFBFBF;
+    color: #737373;
     text-decoration: none;
 }
 a#login:hover, a#login:active{
-    background-color: aqua;
+    background-color: #737373;
+    color: #BFBFBF;
 }
 footer{
+    border-top: 2px solid #737373 ;
     width: 1330px;
-    border: 1px solid black;
     position: absolute;
     top: 100%;
+    background-color: #F2F2F2;
+    color: #737373;
 
 }
 #a-r{
@@ -137,7 +147,7 @@ ul.slider li:target{
     display: inline-block;
     color: white;
     text-decoration: none;
-    background-color: grey;
+    background-color: #735050;
     padding: 10px;
     width: 20px;
     height: 20px;
@@ -150,33 +160,59 @@ ul.slider li:target{
 
 div.barra1{
     display: inline-block;
-    border: solid 2px black;
     width: 1285px;
     height: 50px;
     margin: auto;
     padding: 20px;
+    background-color: #735050;
 }
 .barra img{
     width: 50px;
     height: 50px;
     position: relative;
-    bottom: 0;
+    bottom: 0px;
     left: 0;
 }
 #barra-buscador{
-    border: solid 2px black;
+    border: solid 1px black;
     border-top: 3px;
     border-left: 3px;
     border-right: 3px;
     position: absolute;
+    background-color: #735050;
     top: 60px;
-    width: 800px;
+    width: 750px;
     left: 100px;
 }
 .menu-barra{
     position: absolute;
     top: 40px;
-    left: 900px;
+    left: 900px;                                        
+}
+button.boton-barra a{
+    text-decoration: none;
+    color: #F2F2F2;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 15.5px;
+}
+button.boton-barra a:hover{
+    text-decoration: none;
+    color: #4F5659;
+}
+button.boton-barra{
+    background-color: #735050;
+    text-decoration: none;
+    font-size: 14px;
+    border: none;
+    width: 95px;
+    height: 35px;
+    position: relative;
+    top: -20px;
+    right: 65px;
+}
+button.boton-barra:hover{
+    background-color: #F2F2F2;
+    color: #737373;
 }
 .imgs img{
     width: 50px;
@@ -188,165 +224,226 @@ div.barra1{
 /*Barra 2*/
 div.barra2{
     position: relative;
-    top: -15px;
+    top: -35px;
     display: inline-block;
-    border: solid 2px black;
+    background-color: #F4ABAB;
     width: 1285px;
-    height: 1px;
+    height: 3px;
     margin: auto;
     padding: 20px;
+    font-family: 'Signika Negative', sans-serif;
 }
 div.barra2 a{
     position: relative;
     bottom: 35px;
-    left: 110px;
-    padding: 0px 100px;
+    left: 140px;
+    padding: 4px 50px;
+    background-color: #F4ABAB;
+    color: #737373;
+    text-decoration: none;
+    font-size: 20px;
+}
+div.barra2 a:hover ,div.barra2 a:active{
+    background-color: #735050;
+    color: #BFBFBF;
+    height: 15px;
 }
 div.barra2 select{
+    font-family: 'Signika Negative', sans-serif;
     position: relative;
-    bottom: 15px;
+    bottom: 10px;
+    background-color: #F4ABAB;
+    border: none;
+    color: #737373;
+    text-decoration: none;
+    padding: 4px;
+    font-size: 18px;
 }
 /*Contenido1*/
 section{
     width: 1350px;
     height: 900px;
+    font-family: 'Signika Negative', sans-serif;
 }
 div.inline1-v{
     display: inline;
+    font-size: 20px;
+    font-family: 'Signika Negative', sans-serif;
 }
 div.inline2-v{
     position: relative;
-    bottom: 200px;
+    bottom:220px;
     left: 450px;
+    font-size: 20px;
+    font-family: 'Signika Negative', sans-serif;
 }
 div.inline3-v{
     position: absolute;
     top: 585px;
     left: 910px;
+    font-size: 20px;
+    font-family: 'Signika Negative', sans-serif;
 }
 .buscado{
     position: relative;
     bottom: 200px;
+    font-family: 'Signika Negative', sans-serif;
 }
 .inline1-b{
     display: inline;
+    font-size: 20px;
 }
 div.inline2-b{
     position: relative;
-    bottom: 202px;
+    bottom: 270px;
     left: 450px;
+    font-size: 20px;
 }
 div.inline3-b{
     position: absolute;
     top: 45px;
     left: 900px;
+    font-size: 20px;
 }
 .promocion{
     position: relative;
     bottom: 400px;
+    font-family: 'Signika Negative', sans-serif;
 }
 .inline1-p{
     display: inline;
     position: absolute;
-    bottom: 200px;
+    bottom: 220px;
+    font-size: 20px;
 }
 div.inline2-p{
     display: inline;
     position: relative;
     bottom: -2px;
     left: 450px;
+    font-size: 20px;
 }
 div.inline3-p{
     display: inline;
     position: relative;
-    bottom: 200px;
+    bottom: 210px;
     left: 900px;
+    font-size: 20px;
 }
 /*footer*/
 footer.footer-h{
-    border: solid 3px black;
     width: 1200px;
     height: 100px;
     position: relative;
-    bottom: 100%;
-    margin: auto;
+    top: 450px;
+    margin:auto;
+    background-color: #F2F2F2;
 }
 /*Categorias*/
 .categoria-u{
     display: inline;
+    font-family: 'Signika Negative', sans-serif;
 }
 .categoria1{
     position: relative;
     top: 10px;
-    border: 3px solid black;
     width: 550px;
     height: 300px;
+    border-right: #735050 2px solid;
+    background-color: #F2F2F2;
+    font-family: 'Signika Negative', sans-serif;
 }
 .categoria1 p{
     position: relative;
     bottom: 130px;
     left: 110px;
-
+    color: #735050;
+    font-family: 'Signika Negative', sans-serif;
 }
-#compra1{
-    border: 3px solid black;
+.categoria2 p{
+    font-family: 'Signika Negative', sans-serif;
+}
+.categoria3 p{
+    font-family: 'Signika Negative', sans-serif;
+}
+.categoria4 p{
+    font-family: 'Signika Negative', sans-serif;
+}
+#compra1{ 
     width: 310px;
     position: absolute;
     top: 50px;
-    
+    font-family: 'Signika Negative', sans-serif;
 }
 div.parrafos{
     position: relative;
     top: 150px;
+    font-family: 'Signika Negative', sans-serif;
 }
 #iconos{
     position: absolute;
     top: 220px;
     left: 350px;
+    font-family: 'Signika Negative', sans-serif;
 }
 .categoria2{
     position: relative;
-    bottom: 295px;
-    border: 3px solid black;
+    bottom: 310px;
+    background-color: #F2F2F2;
+    border-right: #735050 2px solid;
     width: 550px;
     height: 300px;
+    font-family: 'Signika Negative', sans-serif;
     left: 650px;
+}
+div.parrafos1{
+    font-family: 'Signika Negative', sans-serif;
 }
 .parrafos1{
     position: relative;
     top: 30px;
     left: 110px;
+    color: #735050;
+    font-family: 'Signika Negative', sans-serif;
 }
 .categoria3{
     position: relative;
     bottom: 200px;
-    border: 3px solid black;
+    background-color: #F2F2F2;
+    border-right: #735050 2px solid;
     width: 550px;
     height: 300px;
+    font-family: 'Signika Negative', sans-serif;
 }
 .categoria4{
     position: relative;
-    bottom: 505px;
+    bottom: 520px;
     left: 650px;
-    border: 3px solid black;
+    background-color: #F2F2F2;
+    border-right: #735050 2px solid;
     width: 550px;
     height: 300px;
+    font-family: 'Signika Negative', sans-serif;
 }
 /*Nombres*/
 div.nombre{
-    border: 3px solid black;
+    border-bottom: 2px solid #735050;
     width: 800px;
     padding: 25px;
     margin: 50px;
+    color: #735050;
+    font-family: 'Signika Negative', sans-serif;
 }
 .nombre1{
     position: relative;
     top: 30px;
+    font-family: 'Signika Negative', sans-serif;
 }
 .parrafos2{
     position: relative;
     bottom: 100px;
     left: 100px;
+    font-family: 'Signika Negative', sans-serif;
 }
 /*ayuda*/
 textarea.ayuda{
@@ -354,189 +451,400 @@ textarea.ayuda{
     width: 1100px;
     margin: 15px;
     padding: auto;
+    font-family: 'Signika Negative', sans-serif;
 }
 /*Carrito*/
 .compras{
     width: 600px;
     margin: 10px;
-    border: 3px solid black;
+    border-right: 2px solid #735050;
     height: 550px;
+    font-family: 'Signika Negative', sans-serif;
 }
 #compras1{
     position: relative;
     top: 70px;
     left: 10px;
+    font-family: 'Signika Negative', sans-serif;
 }
 .botones{
+    position: relative;
+    top: 250px;
     width: 580px;
     padding: 10px;
     margin: 10px;
     height: 50px;
-    border: 3px solid black;
+    border-bottom: #735050 2px solid;
+    font-family: 'Signika Negative', sans-serif;
 }
 .botones a{
+    width: 80px;
+    height: 90px;
     margin: 80px;
+    font-size: 20px;
+    color: #F2F2F2;
+    text-decoration: none;
+    background-color: #735050;
+    font-family: 'Signika Negative', sans-serif;
+}
+.botones a:hover{
+    background-color: #F2F2F2;
+    border: 2px solid #737373;
+    color: #737373;
+    font-family: 'Signika Negative', sans-serif;
 }
 .recomendaciones{
-    border: 3px solid black;
+    border-right: 2px solid #735050;
     width: 550px;
     height: 800px;
     position: relative;
     left: 750px;
     bottom: 650px;
+    font-family: 'Signika Negative', sans-serif;
 }
 .compras2{
     position: relative;
     top: 20px;
     left: 10px;
+    font-family: 'Signika Negative', sans-serif;
 }
 /*Vender*/
 .vender-c{
-    border: solid 3px black;
+    border-right: solid 2px #735050;
     width: 600px;
     height: 400px;
     margin: 10px;
+    font-family: 'Signika Negative', sans-serif;
 }
 .vender-c label{
     position: relative;
     left: 40px;
     top: 30px;
+    font-size: 18px;
+    font-family: 'Signika Negative', sans-serif;
 }
 .vender-c input{
     position: relative;
     top: 30px;
     left: 55px;
+    background-color: #F2F2F2;
+    border: none;
+    border-bottom: 2px solid #737373;
+    font-family: 'Signika Negative', sans-serif;
 }
 .vender-c select{
     position: relative;
     top: 30px;
     left: 60px;
+    border: none;
+    border-bottom: 2px solid #737373;
+    font-size: 16px;
+    font-family: 'Signika Negative', sans-serif;
 }
 textarea.desc{
     position:relative;
     top: 30px;
     left: 55px;
+    font-family: 'Signika Negative', sans-serif;
 }
 #descP{
     position: sticky;
     top: 150px;
+    font-family: 'Signika Negative', sans-serif;
 }
 .vender-i{
     position: relative;
     margin: 10px;
-    border: 3px solid black;
+    border-left: #735050 2px solid;
     width: 450px;
     bottom: 420px;
     left: 850px;
+    font-family: 'Signika Negative', sans-serif;
 }
 .vender-i img{
     padding: 10px;
     margin: 10px;
+    border-right: solid 2px #735050;
+    font-family: 'Signika Negative', sans-serif;
 }
 .vender-i button{
     padding: 10px;
     margin: 10px;
+    border: none;
+    color: #737373;
+    font-size: 14px;
+    font-family: 'Signika Negative', sans-serif;
 }
 .vender-b{
     position: relative;
-    border: 3px solid black;
+    border-top: 2px solid #735050;
     width: 500px;
     height: 100px;
     bottom: 500px;
     margin: 10px;
+    padding: 80px;
+    font-family: 'Signika Negative', sans-serif;
+}
+.boton{
+    font-size: 30px;
+    text-decoration: none;
+    margin: 40px;
+    background-color: #735050;
+    color: #F2F2F2;
+    font-family: 'Signika Negative', sans-serif;
+}
+.boton:hover{
+    font-size: 30px;
+    text-decoration: none;
+    background-color: #F2F2F2;
+    color: #735050;
+    font-family: 'Signika Negative', sans-serif;
 }
 /*Configuracion*/
 .config-c{
     position: relative;
-    border: 3px solid black;
+    border-top: 2px solid #735050;
     width: 1000px;
+    font-size: 20px;
     margin: auto;
+    font-family: 'Signika Negative', sans-serif;
 }
 .config-c input{
     margin: 15px;
     position: relative;
+    background-color: #BFBFBF;
+    font-family: 'Signika Negative', sans-serif;
 }
 .config-c label{
     margin: 15px;
     position: relative;
     left: 250px;
+    font-size: 20px;
+    font-family: 'Signika Negative', sans-serif;
 }
 .config-b{
     position: relative;
+    width: 550px;
     top: 50px;
-    left: 570px;
+    left: 400px;
+    border-bottom: 2px solid #735050;
+    font-family: 'Signika Negative', sans-serif;
 }
 .config-b button{
     margin: 20px;
+    position: relative;
+    font-size: 15px;
+    left: 140px;
+    width: 100px;
+    height: 30px;
+    background-color: #735050;
+    border: none;
+    font-family: 'Signika Negative', sans-serif;
+}
+.config-b button a{
+    color: #BFBFBF;
+    text-decoration: none;
+    font-family: 'Signika Negative', sans-serif;
+}
+.config-b button:hover{
+    color: #735050;
+    background-color: #BFBFBF;
+    font-family: 'Signika Negative', sans-serif;
+}
+.config-b a:hover{
+    color: #735050;
+    font-family: 'Signika Negative', sans-serif;
+}
+/*Ayuda*/
+.contenedor-a{
+    text-align: center;
+    font-family: 'Signika Negative', sans-serif;
+}
+.boton-a button{
+    background-color: #735050;
+    width: 110px;
+    height: 30px;
+    margin: 40px;
+    border: none;
+    font-family: 'Signika Negative', sans-serif;
+}
+.boton-a a{
+    text-decoration: none;
+    color: #F2F2F2;
+    border: none;
+    font-size: 15px;
+    font-family: 'Signika Negative', sans-serif;
+}
+.boton-a button:hover{
+    background-color: #F2F2F2;
+    color: #735050;
+    border: 2 px solid #735050;
+    font-family: 'Signika Negative', sans-serif;
+}
+.boton-a a:hover{
+    color: #735050;
+    border: #735050 2px solid;
+    font-family: 'Signika Negative', sans-serif;
 }
 /*Usuario*/
 .usu{
     position: relative;
     width: 400px;
     height: 350px;
-    border: 3px solid black;
+    border-bottom: 2px solid #735050;
     left: 450px;
+    font-size: 20px;
+    font-family: 'Signika Negative', sans-serif;
 }s
 .usu label{
     position: relative;
     top: 80px;
     margin: 15px;
     text-align: center;
+    font-size: 20px;
+    font-family: 'Signika Negative', sans-serif;
 }
 .usu input{
     position: relative;
-    top: 80px;
+    width: 250px;
     margin: 15px;
+    background-color: #F2F2F2;
+    border: none;
+    border-bottom: #735050 2px solid;
+    font-family: 'Signika Negative', sans-serif;
 }
-#buttonG{
+.buttonG{
     position: relative;
     top: 180px;
-    left: 80px;
+    left: 40px;
     margin: 10px;
+    width: 150px;
+    height: 30px;
+    background-color: #735050;
+    border: none;
+    font-family: 'Signika Negative', sans-serif;
+}
+.buttonG a{
+    text-decoration: none;
+    color: #F2F2F2;
+    font-size: 15px;
+    font-family: 'Signika Negative', sans-serif;
+}
+.buttonG:hover{
+    background-color: #F2F2F2;
+    color: #735050;
+    font-family: 'Signika Negative', sans-serif;
+}
+.buttonG a:hover{
+    color: #735050;
+    font-family: 'Signika Negative', sans-serif;
 }
 /*Pago*/
 .contenedor-t{
     width: 1200px;
     height: 200px;
-    border: 3px solid black;
+    border-bottom: 2px solid #735050;
     padding: 25px;
     text-align: center;
+    font-size: 20px;
+    font-family: 'Signika Negative', sans-serif;
 }
 .contenedor-d{
     width: 1200px;
     height: 350px;
-    border: 3px solid black;
+    border-bottom: 2px solid #735050;
     padding-top: 30px;
     margin: 25px;
     text-align: center;
-   
+   font-size: 20px;
+   font-family: 'Signika Negative', sans-serif;
 }
 .contenedor-b a{
     margin: 30px;
     position: relative;
     left: 450px;
+    background-color: #735050;
+    font-size: 25px;
+    text-decoration: none;
+    color: #F2F2F2;
+    font-family: 'Signika Negative', sans-serif;
+}
+.contenedor-b a:hover{
+    background-color: #F2F2F2;
+    border: 2px solid #737373;
+    color: #735050;
+    font-family: 'Signika Negative', sans-serif;
 }
 .compra-e{
     width: 50%;
     height: 250px;
-    border: 3px solid black;
+    border-bottom: 2px solid #735050;
     position: relative;
     left: 20%;
     text-align: center;
+    font-size: 20px;
+    font-family: 'Signika Negative', sans-serif;
 }
 #b-home{
     position: relative;
     left: 530px;
     top: 30px;
+    width: 200px;
+    height: 30px;
+    background-color: #735050;
+    border: none;
+    font-family: 'Signika Negative', sans-serif;
+}
+#b-home a{
+    color: #F2F2F2;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Signika Negative', sans-serif;
+}
+#b-home:hover{
+    background-color: #F2F2F2;
+    border: #735050 2px solid;
+    font-family: 'Signika Negative', sans-serif;
+}
+#b-home a:hover{
+    color: #737373;
+    font-family: 'Signika Negative', sans-serif;
 }
 .contra-r{
     width: 700px;
     height: 250px;
-    border: 3px solid black;
+    border-bottom: 2px solid #735050;
     text-align: center;
     position: relative;
     top: 30px;
     left: 300px;
+    font-size: 25px;
+    font-family: 'Signika Negative', sans-serif;
+}
+.contenedor-r{
+    position: relative;
+    border: 2px solid #735050;
+    top: 100px;
+    left: 350px;
+    width: 550px;
+    height: 100px;
+    text-align: center;
+    font-family: 'Signika Negative', sans-serif;
+}
+.contenedor-r button{
+    width: 150px;
+    margin: 20px;
+    text-align: center;
+    background-color: #735050;
+    height: 30px;
+    border: none;
+    font-family: 'Signika Negative', sans-serif;
+}
+.contenedor-r a{
+    text-decoration: none;
+    color: #F2F2F2;
+    font-size: 20px;
+    font-family: 'Signika Negative', sans-serif;
 }
 .registrar{
     position: relative;
@@ -544,15 +852,28 @@ textarea.desc{
     left: 300px;
     width: 600px;
     height: 350px;
-    border: 3px solid black;
+    border-bottom: 2px solid #735050;
     text-align: center;
     margin: 30px;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: #737373;
+    font-family: 'Signika Negative', sans-serif;
 }
 .registrar-b{
     position: relative;
     top: 100px;
+   
+}
+.regitsrar-b button{
+    width: 150px;
+    font-family: 'Signika Negative', sans-serif;
 }
 .registrar-b a{
     padding: 15px;
     margin: auto;
+    font-size: 20px;
+    text-decoration: none;
+    color: #735050;
+    font-family: 'Raleway', sans-serif;
 }
